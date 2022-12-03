@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const mongodb_username = encodeURIComponent(process.env.MONGODB_USER);
 const mongodb_password = encodeURIComponent(process.env.MONGODB_PASSWORD);
-const db = `mongodb+srv://${mongodb_username}:${mongodb_password}@cluster0.5udgl4z.mongodb.net/foodfinder?retryWrites=true&w=majority`;
+const mongodb_dbname = encodeURIComponent(process.env.MONGODB_DBNAME);
+const db = `mongodb+srv://${mongodb_username}:${mongodb_password}@cluster0.5udgl4z.mongodb.net/${mongodb_dbname}?retryWrites=true&w=majority`;
 
 const connectDB = async () => {
     try {
