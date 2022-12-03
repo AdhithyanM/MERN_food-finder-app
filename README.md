@@ -24,16 +24,16 @@ In order to execute the current project, you have to follow the mentioned steps 
             X_APP_ID=data
 
        **Note**: 
-          **-> To get data for MONGODB_URI:**
-                - In your mongoDB atlas, go to cluster that you want to connect.
-                - Click connect button and choose Connect Your Application.
-                - Copy the connection string and use this as data for MONGODB_URI
-                - If your password has special characters, make sure to encode it and specify in the data
-          **-> To get data for X_APP_KEY and X_APP_ID:**
-                - Go to https://developer.nutritionix.com/ and create a account.
-                - Go to https://developer.nutritionix.com/admin/access_details
-                - Get the data for X_APP_KEY under Application Keys
-                - Get the data for X_APP_ID under Application ID 
+          **1. To get data for MONGODB_URI:**
+                1. In your mongoDB atlas, go to cluster that you want to connect.
+                2. Click connect button and choose Connect Your Application.
+                3. Copy the connection string and use this as data for MONGODB_URI
+                4. If your password has special characters, make sure to encode it and specify in the data
+          **2. To get data for X_APP_KEY and X_APP_ID:**
+                1. Go to https://developer.nutritionix.com/ and create a account.
+                2. Go to https://developer.nutritionix.com/admin/access_details
+                3. Get the data for X_APP_KEY under Application Keys
+                4. Get the data for X_APP_ID under Application ID 
     3. Run the server by executing "npm run server" command from root folder.
 4. Setup the React App.
    **Steps for setting up the react app:**
