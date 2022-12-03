@@ -15,8 +15,7 @@ In order to execute the current project, you have to follow the mentioned steps 
 
 1. > git clone https://github.com/AdhithyanM/food-finder.app.git
 2. Open the cloned project in VSCode.
-3. Setup the Server.
-   Steps for setting up the server:
+3. Setup the server by following below steps.
     1. Navigate to /server folder and execute the command "npm install" in order to install the required node packages.
     2. create a .env file in root folder and add the following data in it and save.
 
@@ -40,8 +39,7 @@ In order to execute the current project, you have to follow the mentioned steps 
 
     3. Run the server by executing "npm run server" command from root folder.
 
-4. Setup the React App.
-   Steps for setting up the react app:
+4. Setup the react app by following below steps.
     1. Navigate to /webclient folder and execute the command "npm install" in order to install the required node packages.
     2. Run the app by executing the command "npm start".
 5. Access the application in browser using the url http://localhost:3000
