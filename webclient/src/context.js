@@ -6,7 +6,7 @@ const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [searchText, setSearchText] = useState('sd');
+  const [searchText, setSearchText] = useState('');
   const [searchResults, setSearchResults] = useState([]);
 
   const getSearchResults = async () => {

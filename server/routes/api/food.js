@@ -11,6 +11,9 @@ const {
 // @access Public
 router.get('/search', async (req, res) => {
     const searchText = req.query.searchText;
+    if(searchText.length < 1) {
+        return res.status(200).send([]);
+    }
     const dbResult = await getSearchResultFromDB(searchText);
     // console.log(dbResult);
     if(dbResult == null) {
