@@ -22,7 +22,7 @@ In order to execute the current project, you have to follow the mentioned steps 
             MONGODB_URI=data
             X_APP_KEY=data
             X_APP_ID=data
-       Note: 
+            
           1. To get data for MONGODB_URI:
                 1. In your mongoDB atlas, go to cluster that you want to connect.
                 2. Click connect button and choose Connect Your Application.
