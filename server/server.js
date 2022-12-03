@@ -6,6 +6,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+// import the routes
+const food = require('./routes/api/food');
+
 // connect to Database.
 const mongoose = require('mongoose');
 const connectDB = require('./database/config/db');
@@ -17,7 +20,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 /* routes starts here */
-app.get("/", (req,res) => res.send("Home page url"));
+app.use('/api/food', food);
 /* routes ends here */
 
 // listen to SERVER_PORT once mongoose made connection to mongoDB
